@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunrisers Hyderabad - Dream Team</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Sunrisers Logo" class="logo"/>
+    <h1>Sunrisers Hyderabad</h1>
+    <p class="slogan">"Rise Up to Every Challenge"</p>
+    <p class="orange-army">#OrangeArmy</p>
+  </header>
+
+  <section class="controls">
+    <input type="text" id="searchInput" placeholder="Search players..." />
+    <select id="roleFilter">
+      <option value="all">All Roles</option>
+      <option value="Batsman">Batsman</option>
+      <option value="Bowler">Bowler</option>
+      <option value="All-rounder">All-rounder</option>
+    </select>
+  </section>
+
+  <main class="card-grid" id="playerGrid"></main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <h2 id="modal-name"></h2>
+      <p><strong>Role:</strong> <span id="modal-role"></span></p>
+      <p><strong>Jersey #</strong>: <span id="modal-jersey"></span></p>
+      <p><strong>Matches Played:</strong> <span id="modal-matches"></span></p>
+      <p><strong>Strike Rate:</strong> <span id="modal-strike"></span></p>
+      <p><strong>Best Performance:</strong> <span id="modal-best"></span></p>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
